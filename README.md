@@ -8,7 +8,7 @@ This project was developed as the final project of the **React.js Course** and d
 
 # 🚀 Live Demo
 
-> Coming Soon...
+🔗 **[View Live Demo](https://react-online-shop-flax.vercel.app)**
 
 ---
 
@@ -68,31 +68,36 @@ src
 
 ### Home Page
 
-![Home](./screenshots/home.png)
+![Home](./public/images/screenshot-home.png)
 
 ---
 
 ### Products
 
-![Products](./screenshots/products.png)
+![Products](./public/images/screenshot-products.png)
 
 ---
 
 ### Product Details
 
-![Product](./screenshots/product.png)
+![Product](./public/images/screenshot-detail.png)
 
 ---
 
 ### Shopping Cart
 
-![Cart](./screenshots/cart.png)
+![Cart](./public/images/screenshot-cart.png)
 
 ---
 
 ### Login Page
 
-![Login](./screenshots/login.png)
+![Login](./public/images/screenshot-login.png)
+
+---
+### Whishlist
+
+![Login](./public/images/screenshot-wishlist.png)
 
 ---
 
