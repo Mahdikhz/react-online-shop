@@ -1,48 +1,180 @@
-# فروشگاه آنلاین شاهان
+# 🛍️ Shahan Online Shop
 
-پروژه پایانی دوره React — یک فروشگاه اینترنتی کامل با صفحه اصلی، جستجو و فیلتر محصولات، و ورود/ثبت‌نام.
+A modern and responsive online shopping website built with **React** and **Tailwind CSS**.
 
-## تکنولوژی‌ها
-- React 19 + React Router
-- Vite (باندلر و سرور توسعه)
+This project was developed as the final project of the **React.js Course** and demonstrates the implementation of a real-world e-commerce front-end application.
+
+---
+
+# 🚀 Live Demo
+
+> Coming Soon...
+
+---
+
+# ✨ Features
+
+- Responsive Design
+- Home Page
+- Product Listing
+- Product Details Page
+- Advanced Product Filtering
+- Product Search
+- Product Sorting
+- Shopping Cart
+- Wishlist
+- User Authentication (Login / Register)
+- User Account Dashboard
+- Checkout Page
+- Order Success Page
+- Dark / Light Theme
+- Animated Hero Slider
+- Toast Notifications
+- Responsive Mobile Menu
+- Scroll To Top Navigation
+
+---
+
+# 🛠 Tech Stack
+
+- React 19
+- Vite
+- React Router DOM
 - Tailwind CSS v4
-- lucide-react (آیکون‌ها)
+- Context API
+- React Hooks
+- Lucide React Icons
+- JavaScript (ES6+)
 
-## نصب و اجرا
+---
+
+# 📂 Project Structure
+
+```
+src
+│
+├── assets
+├── components
+├── context
+├── data
+├── pages
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+# 📸 Screenshots
+
+### Home Page
+
+![Home](./screenshots/home.png)
+
+---
+
+### Products
+
+![Products](./screenshots/products.png)
+
+---
+
+### Product Details
+
+![Product](./screenshots/product.png)
+
+---
+
+### Shopping Cart
+
+![Cart](./screenshots/cart.png)
+
+---
+
+### Login Page
+
+![Login](./screenshots/login.png)
+
+---
+
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Mahdikhz/react-online-shop.git
+```
+
+Navigate to the project
+
+```bash
+cd react-online-shop
+```
+
+Install dependencies
 
 ```bash
 npm install
+```
+
+Run the development server
+
+```bash
 npm run dev
 ```
 
-سپس آدرس نمایش داده‌شده در ترمینال (معمولاً http://localhost:5173) را در مرورگر باز کنید.
-
-برای ساخت نسخه نهایی (production build):
+Create a production build
 
 ```bash
 npm run build
+```
+
+Preview production build
+
+```bash
 npm run preview
 ```
 
-## ساختار پروژه
+---
 
-```
-src/
-  components/     # کامپوننت‌های قابل استفاده مجدد (هدر، فوتر، کارت محصول، ...)
-  context/        # ShopContext برای مدیریت سبد خرید، علاقه‌مندی‌ها و کاربر
-  data/           # داده نمونه محصولات، دسته‌بندی‌ها و برندها
-  pages/          # صفحات اصلی: Home, Products, ProductDetail, Auth, Cart
-```
+# 📁 Main Pages
 
-## صفحات پیاده‌سازی‌شده
+- Home
+- Products
+- Product Details
+- Login / Register
+- Wishlist
+- Shopping Cart
+- Checkout
+- User Account
+- Order Success
 
-1. **صفحه اصلی (`/`)** — اسلایدر، برندها، ویژگی‌های اطمینان، دسته‌بندی‌ها و لیست محصولات
-2. **جستجو و فیلتر محصولات (`/products`)** — فیلتر بر اساس دسته، برند، قیمت، امتیاز و مرتب‌سازی
-3. **جزئیات محصول (`/products/:id`)**
-4. **ورود / ثبت‌نام (`/login`)** — با اعتبارسنجی فرم
-5. **سبد خرید (`/cart`)**
+---
 
-## نکته درباره تصاویر محصولات
-چون تصویر واقعی محصولات در اختیار نبود، به‌جای عکس، از کارت‌های آیکونی رنگی (lucide-react) استفاده شده است.
-برای جایگزینی با عکس واقعی: در `src/components/ProductCard.jsx` و `src/pages/ProductDetail.jsx`،
-به‌جای `<DynamicIcon .../>` تگ `<img src="..." />` بگذارید و در `src/data/products.js` فیلد `image` را به هر محصول اضافه کنید.
+# 📌 Future Improvements
+
+- Backend Integration
+- REST API
+- Authentication with JWT
+- Payment Gateway
+- Admin Dashboard
+- Product Reviews
+- User Orders
+- Database Integration
+- Search Suggestions
+- Product Comparison
+
+---
+
+# 👨‍💻 Developer
+
+**Mahdi Khazaee**
+
+GitHub
+
+https://github.com/Mahdikhz
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a **Star ⭐** on GitHub.
