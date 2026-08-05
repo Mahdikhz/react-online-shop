@@ -85,7 +85,7 @@ export default function Account() {
                 className={`w-full flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-semibold transition-colors text-right ${
                   activeTab === id
                     ? "bg-primary-50 text-primary-700"
-                    : "text-ink-700 hover:bg-ink-500"
+                    : "text-ink-700 menu-hover"
                 }`}
               >
                 <Icon className="w-4.5 h-4.5 shrink-0" />

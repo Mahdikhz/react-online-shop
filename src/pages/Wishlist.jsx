@@ -20,7 +20,7 @@ export default function Wishlist() {
 
   if (!items.length) {
     return (
-      <div className="mx-auto max-w-3xl px-4 py-24 text-center">
+      <div className="mx-auto max-w-3xl px-4 py-34 text-center">
         <Heart className="w-16 h-16 text-ink-500/25 mx-auto mb-4" />
         <h1 className="text-2xl font-black text-ink-900 mb-2">
           لیست علاقه‌مندی‌ها خالی است

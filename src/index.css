@@ -31,6 +31,11 @@ html {
   direction: rtl;
   scroll-behavior: smooth;
 }
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary-300) transparent;
+}
 
 body {
   font-family: "Vazirmatn", "Tahoma", sans-serif;
@@ -38,9 +43,10 @@ body {
   color: var(--color-ink-900);
 }
 
+/* Chrome, Edge, Opera, Brave */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--color-primary-300);
@@ -156,4 +162,25 @@ body {
 .dark-mode .shadow-sm,
 .dark-mode .shadow-soft {
   box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.45) !important;
+}
+/* ===========================
+   Menu Hover
+=========================== */
+
+.menu-hover {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.menu-hover:hover {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-700);
+}
+
+/* Dark Mode */
+.dark-mode .menu-hover:hover {
+  background-color: #232037;
+  color: #f5f3ff;
 }

@@ -80,7 +80,7 @@ export default function Header() {
           >
             <Heart className="w-5 h-5 text-ink-700" />
             {wishlist.length > 0 && (
-              <span className="absolute -top-1 -left-1 bg-accent text-white text-[10px] rounded-full min-w-[18px] h-[18px] flex items-center justify-center">
+              <span className="absolute -top-1 -left-1 bg-accent text-white text-[10px] rounded-full min-w-[18px] h-[18px] flex items-center justify-center pt-[3px]">
                 {wishlist.length}
               </span>
             )}
@@ -99,7 +99,7 @@ export default function Header() {
             <ShoppingCart className="w-4 h-4" />
             <span className="hidden sm:inline">سبد خرید</span>
             {cartCount > 0 && (
-              <span className="bg-white text-primary-700 text-xs rounded-full w-5 h-5 flex items-center justify-center">
+              <span className="bg-white text-primary-700 text-xs rounded-full w-5 h-5 flex items-center justify-center pt-[3px]">
                 {cartCount}
               </span>
             )}
@@ -122,10 +122,10 @@ export default function Header() {
       <nav className="hidden md:block border-t border-ink-500/10 bg-white">
         <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-6 text-sm font-medium text-ink-700">
-            <Link to="/products" className="text-primary-600 font-bold">
+            {/* <Link to="/products" className="text-primary-600 font-bold">
               مگا لیست منو
-            </Link>
-            {categories.slice(0, 6).map((c) => (
+            </Link> */}
+            {categories.slice(0, 8).map((c) => (
               <Link
                 key={c.id}
                 to={`/products?category=${c.id}`}

@@ -196,7 +196,7 @@ export default function Products() {
       </div>
       <div className="flex gap-8">
         <aside className="hidden lg:block w-64 shrink-0">
-          <div className="bg-white rounded-2xl border border-ink-500/10 p-5 sticky top-24">
+          <div className="sticky top-24 h-[calc(100vh-110px)] overflow-y-auto bg-white rounded-2xl border border-ink-500/10 p-6 top-34">
             {filters}
           </div>
         </aside>
