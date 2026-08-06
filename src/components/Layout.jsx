@@ -11,7 +11,6 @@ export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col bg-surface text-ink-900 transition-colors">
       <ScrollToTop />
-
       <InitialLoader />
       <Toast />
       <TopBar />

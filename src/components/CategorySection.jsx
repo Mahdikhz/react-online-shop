@@ -27,7 +27,7 @@ export default function CategorySection() {
           <Link
             key={c.id}
             to={`/products?category=${c.id}`}
-            className="group flex flex-col items-center gap-2 sm:gap-3 bg-white rounded-2xl border border-ink-500/10 py-5 px-2 hover:border-primary-300 hover:shadow-soft transition-all"
+            className="group flex flex-col items-center gap-2 sm:gap-3 bg-white rounded-2xl border border-ink-900/10 py-5 px-2 hover:border-primary-300 hover:shadow-soft transition-all"
           >
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary-50 text-primary-600 group-hover:bg-primary-600 group-hover:text-white flex items-center justify-center transition-colors">
               <DynamicIcon
