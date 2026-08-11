@@ -5,8 +5,13 @@ export default function InitialLoader() {
 
   useEffect(() => {
     const hide = () => setVisible(false);
-    const timer = window.setTimeout(hide, 650);
+    const timer = setTimeout(hide, 650);
     window.addEventListener("load", hide, { once: true });
+
+    // ---------------To view the site loader----------------------------------
+    // const timer = window.setTimeout(hide, 12650);
+    // // window.addEventListener("load", hide, { once: true });
+
     return () => {
       window.clearTimeout(timer);
       window.removeEventListener("load", hide);
@@ -22,10 +27,10 @@ export default function InitialLoader() {
     >
       <div className="text-center">
         <img
-            src="/SHAHAN.svg"
-            alt="لوگوی فروشگاه شاهان"
-            className=" flex items-center justify-center font-black text-xl mx-auto shadow-soft"
-          />
+          src="/SHAHAN.svg"
+          alt="لوگوی فروشگاه شاهان"
+          className="w-28 h-28 object-contain mx-auto"
+        />
         <div className="mt-5 flex justify-center gap-1.5" aria-hidden="true">
           <span className="loader-dot" />
           <span className="loader-dot loader-dot-delay-1" />
