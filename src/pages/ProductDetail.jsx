@@ -196,7 +196,7 @@ export default function ProductDetail() {
             </div>
           </div>
 
-          <p className="text-ink-700 leading-7 mb-6 text-sm sm:text-base">
+          <p className="text-ink-700 leading-7 mb-20 text-sm sm:text-base">
             {product.title} با کیفیت ساخت عالی و گارانتی اصالت کالا، آماده ارسال
             به سراسر کشور است. این محصول یکی از پرطرفدارترین کالاهای دسته{" "}
             {product.brand} در فروشگاه شاهان می‌باشد.

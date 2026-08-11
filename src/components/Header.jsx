@@ -39,9 +39,11 @@ export default function Header() {
           )}
         </button>
         <Link to="/" className="flex items-center gap-2 shrink-0">
-          <div className="w-10 h-10 rounded-xl bg-primary-600 text-white flex items-center justify-center font-black">
-            SH
-          </div>
+          <img
+            src="/SHAHAN.svg"
+            alt="لوگوی فروشگاه شاهان"
+            className="w-10 h-10 object-contain"
+          />
           <div className="hidden sm:block leading-tight">
             <b className="text-lg text-ink-900">فروشگاه آنلاین شاهان</b>
             <div className="text-xs text-ink-500">
@@ -57,7 +59,7 @@ export default function Header() {
               placeholder="جستجوی محصول..."
               className="w-full rounded-xl border border-ink-500/15 bg-surface pr-4 pl-11 py-2.5 text-sm"
             />
-            <button className="absolute left-1.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-primary-600 text-white flex items-center justify-center">
+            <button className="absolute cursor-pointer left-1.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-primary-600 text-white flex items-center justify-center">
               <Search className="w-4 h-4" />
             </button>
           </div>
@@ -66,7 +68,7 @@ export default function Header() {
           <button
             onClick={toggleTheme}
             title={theme === "dark" ? "حالت روشن" : "حالت تاریک"}
-            className="w-11 h-11 rounded-xl bg-surface flex items-center justify-center"
+            className="w-11 h-11 rounded-xl bg-surface flex items-center justify-center cursor-pointer"
           >
             {theme === "dark" ? (
               <Sun className="w-5 h-5 text-amber-400" />

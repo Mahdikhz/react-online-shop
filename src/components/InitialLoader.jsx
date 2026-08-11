@@ -21,9 +21,11 @@ export default function InitialLoader() {
       aria-label="در حال بارگذاری"
     >
       <div className="text-center">
-        <div className="w-16 h-16 rounded-2xl bg-primary-600 text-white flex items-center justify-center font-black text-xl mx-auto shadow-soft">
-          SH
-        </div>
+        <img
+            src="/SHAHAN.svg"
+            alt="لوگوی فروشگاه شاهان"
+            className=" flex items-center justify-center font-black text-xl mx-auto shadow-soft"
+          />
         <div className="mt-5 flex justify-center gap-1.5" aria-hidden="true">
           <span className="loader-dot" />
           <span className="loader-dot loader-dot-delay-1" />

@@ -57,9 +57,11 @@ export default function Auth() {
     <div className="min-h-[calc(100vh-160px)] flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <div className="w-14 h-14 rounded-2xl bg-primary-600 text-white flex items-center justify-center font-black text-xl mx-auto mb-4">
-            SH
-          </div>
+          <img
+            src="/SHAHAN.svg"
+            alt="لوگوی فروشگاه شاهان"
+            className="w-14 h-14 object-contain mx-auto mb-1"
+          />
           <h1 className="text-2xl font-black text-ink-900">
             {mode === "login" ? "ورود به حساب کاربری" : "ساخت حساب کاربری جدید"}
           </h1>
