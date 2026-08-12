@@ -14,14 +14,11 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="col-span-2 md:col-span-1">
           <div className="flex items-center gap-2 mb-4">
-            {/* <div className="w-10 h-10 rounded-xl bg-primary-600 text-white flex items-center justify-center font-black">
-              SH
-            </div> */}
-             <img
-            src="/SHAHAN.svg"
-            alt="لوگوی فروشگاه شاهان"
-            className="w-10 h-10 object-contain"
-          />
+            <img
+              src="/SHAHAN.svg"
+              alt="لوگوی فروشگاه شاهان"
+              className="w-10 h-10 object-contain"
+            />
             <span className="font-extrabold text-white text-lg">
               فروشگاه شاهان
             </span>
@@ -71,7 +68,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                to="/products"
+                to="/account"
                 className="hover:text-white transition-colors"
               >
                 پیگیری سفارش

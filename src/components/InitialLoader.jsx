@@ -4,17 +4,36 @@ export default function InitialLoader() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    const hide = () => setVisible(false);
-    const timer = setTimeout(hide, 650);
-    window.addEventListener("load", hide, { once: true });
+    const MIN_DISPLAY_TIME = 1000;
+    let minTimeElapsed = false;
+    let pageLoaded = false;
 
-    // ---------------To view the site loader----------------------------------
-    // const timer = window.setTimeout(hide, 12650);
-    // // window.addEventListener("load", hide, { once: true });
+    const tryHide = () => {
+      if (minTimeElapsed && pageLoaded) {
+        setVisible(false);
+      }
+    };
 
+    const minTimer = setTimeout(() => {
+      minTimeElapsed = true;
+      tryHide();
+    }, MIN_DISPLAY_TIME);
+
+    const handleLoad = () => {
+      pageLoaded = true;
+      tryHide();
+    };
+
+    if (document.readyState === "complete") {
+      // اگه صفحه از قبل لود شده بود شده
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad, { once: true });
+    }
+// ---------------------Cleanup Function------------------
     return () => {
-      window.clearTimeout(timer);
-      window.removeEventListener("load", hide);
+      clearTimeout(minTimer);
+      window.removeEventListener("load", handleLoad);
     };
   }, []);
 
@@ -22,7 +41,7 @@ export default function InitialLoader() {
 
   return (
     <div
-      className="fixed inset-0 z-[100] bg-surface flex items-center justify-center"
+      className="fixed inset-0 z-100 bg-surface flex items-center justify-center"
       aria-label="در حال بارگذاری"
     >
       <div className="text-center">
