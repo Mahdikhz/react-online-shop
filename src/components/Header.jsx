@@ -127,7 +127,7 @@ export default function Header() {
             {/* <Link to="/products" className="text-primary-600 font-bold">
               مگا لیست منو
             </Link> */}
-            {categories.slice(0, 8).map((c) => (
+            {categories.slice(0, 6).map((c) => (
               <Link
                 key={c.id}
                 to={`/products?category=${c.id}`}

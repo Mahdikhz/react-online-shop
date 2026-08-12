@@ -37,6 +37,7 @@ export const products = [
     icon: "Smartphone",
     badge: "پرفروش",
     color: "primary",
+    // image: "/images/nothing-phone-2.jpg",
   },
   {
     id: 2,

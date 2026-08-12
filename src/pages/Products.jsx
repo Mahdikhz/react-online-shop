@@ -5,7 +5,7 @@ import ProductCard from "../components/ProductCard";
 import DynamicIcon from "../components/DynamicIcon";
 import { products, categories, brands } from "../data/products";
 import { useShop } from "../context/ShopContext";
-const MAX = 120000000;
+const MAX = 320000000;
 export default function Products() {
   const [params, setParams] = useSearchParams();
   const { wishlist } = useShop();

@@ -56,7 +56,7 @@ export default function ProductCard({ product }) {
         <div className="text-xs text-ink-500 mb-1">{product.brand}</div>
         <Link
           to={`/products/${product.id}`}
-          className="font-bold text-sm sm:text-[15px] text-ink-900 line-clamp-2 mb-2 hover:text-primary-600"
+          className="font-bold text-sm sm:text-[15px] text-ink-900 line-clamp-1 mb-2 hover:text-primary-600"
         >
           {product.title}
         </Link>
