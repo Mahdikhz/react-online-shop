@@ -7,7 +7,7 @@ export default function Toast() {
   const Icon = ok ? CheckCircle2 : XCircle;
   return (
     <div
-      className="fixed top-5 left-5 z-[120] w-[min(92vw,380px)] rounded-2xl border border-ink-500/10 bg-white shadow-soft p-4 flex items-start gap-3 toast-in"
+      className="fixed top-5 left-5 z-120 w-[min(92vw,380px)] rounded-2xl border border-ink-500/10 bg-white shadow-soft p-4 flex items-start gap-3 toast-in"
       role="status"
     >
       <Icon

@@ -37,7 +37,7 @@ export const products = [
     icon: "Smartphone",
     badge: "پرفروش",
     color: "primary",
-    // image: "/images/nothing-phone-2.jpg",
+    image: "/imagesp/Nothing Phone (2) 256GB.png",
   },
   {
     id: 2,
@@ -51,6 +51,7 @@ export const products = [
     icon: "Smartphone",
     badge: "جدید",
     color: "accent",
+    image: "/imagesp/iPhone 15 Pro Max 256GB.png",
   },
   {
     id: 3,
@@ -64,6 +65,7 @@ export const products = [
     icon: "Smartphone",
     badge: "تخفیف",
     color: "primary",
+    image: "/imagesp/Samsung Galaxy S24 Ultra.png",
   },
   {
     id: 4,
@@ -77,6 +79,7 @@ export const products = [
     icon: "Smartphone",
     badge: "تخفیف",
     color: "success",
+    image: "/imagesp/Xiaomi Redmi Note 13 Pro.png",
   },
   {
     id: 5,
@@ -90,6 +93,7 @@ export const products = [
     icon: "Laptop",
     badge: null,
     color: "primary",
+    image: "/imagesp/Lenovo Legion 5 Pro.png",
   },
   {
     id: 6,
@@ -103,6 +107,7 @@ export const products = [
     icon: "Laptop",
     badge: "پرفروش",
     color: "accent",
+    image: "/imagesp/MacBook Air M3 13inch.png",
   },
   {
     id: 7,
@@ -116,6 +121,7 @@ export const products = [
     icon: "Laptop",
     badge: null,
     color: "success",
+    image: "/imagesp/Samsung Galaxy Book4.png",
   },
   {
     id: 8,
@@ -129,6 +135,7 @@ export const products = [
     icon: "Camera",
     badge: "تخفیف",
     color: "primary",
+    image: "/imagesp/Canon EOS R50.png",
   },
   {
     id: 9,
@@ -142,6 +149,7 @@ export const products = [
     icon: "Camera",
     badge: null,
     color: "accent",
+    image: "/imagesp/Sony Alpha A6400.png",
   },
   {
     id: 10,
@@ -155,6 +163,7 @@ export const products = [
     icon: "Headphones",
     badge: "پرفروش",
     color: "primary",
+    image: "/imagesp/AirPods Pro.png",
   },
   {
     id: 11,
@@ -168,6 +177,7 @@ export const products = [
     icon: "Headphones",
     badge: "جدید",
     color: "success",
+    image: "/imagesp/Samsung Galaxy Buds3 Pro.png",
   },
   {
     id: 12,
@@ -181,6 +191,7 @@ export const products = [
     icon: "Speaker",
     badge: "تخفیف",
     color: "accent",
+    image: "/imagesp/Xiaomi Sound Speaker.png",
   },
   {
     id: 13,
@@ -194,6 +205,7 @@ export const products = [
     icon: "Watch",
     badge: null,
     color: "primary",
+    image: "/imagesp/Apple Watch Series 9.png",
   },
   {
     id: 14,
@@ -207,6 +219,7 @@ export const products = [
     icon: "Watch",
     badge: "تخفیف",
     color: "success",
+    image: "/imagesp/Samsung Galaxy Watch6.png",
   },
   {
     id: 15,
@@ -220,6 +233,7 @@ export const products = [
     icon: "Tv",
     badge: "تخفیف",
     color: "primary",
+    image: "/imagesp/LG OLED55 4K Smart TV.png",
   },
   {
     id: 16,
@@ -233,6 +247,7 @@ export const products = [
     icon: "Tv",
     badge: "جدید",
     color: "accent",
+    image: "/imagesp/Samsung Neo QLED 65inch.png",
   },
   {
     id: 17,
@@ -246,6 +261,7 @@ export const products = [
     icon: "Gamepad2",
     badge: "پرفروش",
     color: "primary",
+    image: "/imagesp/PlayStation 5 Slim.png",
   },
   {
     id: 18,
@@ -259,6 +275,7 @@ export const products = [
     icon: "Gamepad2",
     badge: "تخفیف",
     color: "success",
+    image: "/imagesp/Xbox Series X.png",
   },
   {
     id: 19,
@@ -272,6 +289,7 @@ export const products = [
     icon: "Fan",
     badge: "تخفیف",
     color: "accent",
+    image: "/imagesp/پنکه هوشمند شیائومی.png",
   },
   {
     id: 20,
@@ -285,5 +303,6 @@ export const products = [
     icon: "Fan",
     badge: null,
     color: "primary",
+    image: "/imagesp/جاروبرقی هوشمند ال جی.png",
   },
 ];

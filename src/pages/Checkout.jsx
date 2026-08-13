@@ -117,7 +117,7 @@ export default function Checkout() {
   const selectedAddress = addresses.find((a) => a.id === selectedAddressId);
 
   const applyCoupon = () => {
-    const code = coupon.trim().toUpperCase();
+    const code = coupon.trim();
     if (!COUPONS[code]) {
       setAppliedCode("");
       showToast?.("کد تخفیف معتبر نیست.", "error");

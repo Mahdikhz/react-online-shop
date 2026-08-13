@@ -42,7 +42,7 @@ export default function OrderSuccess() {
           <div className="rounded-xl bg-surface p-4">
             <Truck className="text-primary-600 mb-2" />
             <div className="text-xs text-ink-500">ارسال</div>
-            <b>ارسال عادی</b>
+            <b>{o.shippingMethod}</b>
           </div>
           <div className="rounded-xl bg-surface p-4">
             <UserRound className="text-primary-600 mb-2" />
