@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { SlidersHorizontal, Star, ChevronDown } from "lucide-react";
+import { SlidersHorizontal, Star } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import DynamicIcon from "../components/DynamicIcon";
 import { products, categories, brands } from "../data/products";
 import { useShop } from "../context/ShopContext";
+import SortDropdown from "../components/SortDropdown";
 const MAX = 320000000;
 export default function Products() {
   const [params, setParams] = useSearchParams();
@@ -201,27 +202,38 @@ export default function Products() {
           </div>
         </aside>
         <div className="flex-1">
-          <div className="flex justify-between mb-5">
+          
+          <div className="flex items-center justify-between mb-5">
             <button
               onClick={() => setMobile(true)}
-              className="lg:hidden flex gap-2 bg-white border border-ink-500/15 rounded-xl px-4 py-2.5"
+              className="lg:hidden
+                          flex
+                          items-center
+                          gap-2
+                          bg-white
+                          border
+                          border-ink-500/15
+                          rounded-xl
+                          px-4
+                          py-3
+                          text-sm
+                          font-semibold
+                          text-ink-700
+                          hover:border-primary-300
+                          hover:text-primary-600
+                          transition-colors
+                        "
+      
             >
               <SlidersHorizontal className="w-4 h-4" />
               فیلترها
             </button>
-            <div className="relative mr-auto">
-              <select
+
+            <div className="mr-auto">
+              <SortDropdown
                 value={sort}
-                onChange={(e) => patch({ sort: e.target.value })}
-                className="appearance-none bg-white border border-ink-500/15 rounded-xl pr-4 pl-9 py-2.5 text-sm"
-              >
-                <option value="popular">محبوب‌ترین</option>
-                <option value="cheapest">ارزان‌ترین</option>
-                <option value="expensive">گران‌ترین</option>
-                <option value="discount">بیشترین تخفیف</option>
-                <option value="newest">جدیدترین</option>
-              </select>
-              <ChevronDown className="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4" />
+                onChange={(value) => patch({ sort: value })}
+              />
             </div>
           </div>
           {filtered.length ? (
