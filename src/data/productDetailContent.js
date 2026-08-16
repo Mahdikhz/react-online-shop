@@ -74,7 +74,8 @@ export function getSpecs(product) {
 }
 
 export function getReviews(product) {
-  const count = Math.min(4, Math.max(2, Math.round((product.rating - 3) * 3)));
+  const count = 4;
+
   return Array.from({ length: count }, (_, i) => ({
     id: i,
     name: reviewerNames[(product.id + i) % reviewerNames.length],
