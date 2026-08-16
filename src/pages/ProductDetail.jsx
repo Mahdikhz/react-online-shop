@@ -165,7 +165,7 @@ export default function ProductDetail() {
 
           <div className="flex items-center gap-3 mb-5 text-sm">
             <div className="flex items-center gap-1 text-amber-500 font-semibold">
-              <Star className="w-4 h-4 fill-amber-400" /> {avgReviewRating}
+              <Star className="w-4 h-4 fill-amber-400" /> {product.rating}
             </div>
             <button
               onClick={() => setActiveTab("reviews")}
@@ -305,13 +305,13 @@ export default function ProductDetail() {
             <div className="bg-white rounded-2xl border border-ink-500/10 p-6 flex items-center gap-6 flex-wrap">
               <div className="text-center">
                 <div className="text-4xl font-black text-ink-900">
-                  {avgReviewRating}
+                  {product.rating}
                 </div>
                 <div className="flex items-center gap-0.5 justify-center mt-1">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star
                       key={i}
-                      className={`w-4 h-4 ${i < Math.round(avgReviewRating) ? "fill-amber-400 text-amber-400" : "text-ink-500/20"}`}
+                      className={`w-4 h-4 ${i < Math.round(product.rating) ? "fill-amber-400 text-amber-400" : "text-ink-500/20"}`}
                     />
                   ))}
                 </div>
