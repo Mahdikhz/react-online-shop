@@ -25,7 +25,7 @@ export default function Header() {
   const search = (e) => {
     e.preventDefault();
     const q = query.trim();
-    navigate(q ? `/products?q=${encodeURIComponent(q)}` : "/products");
+    navigate(q ? `/products?q=${(q)}` : "/products");
     setMobileOpen(false);
   };
   return (

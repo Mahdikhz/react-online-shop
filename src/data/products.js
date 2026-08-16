@@ -276,6 +276,12 @@ export const products = [
     badge: "تخفیف",
     color: "success",
     image: "/imagesp/PlayStation 5 pro.png",
+     images: [
+    "/imagesp/PlayStation 5 pro.png",
+    "/imagesp/PlayStation 5 pro-2.png",
+    "/imagesp/PlayStation 5 pro-3.png",
+    "/imagesp/PlayStation 5 pro-4.png",
+  ],
   },
   {
     id: 19,

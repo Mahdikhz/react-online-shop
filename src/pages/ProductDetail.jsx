@@ -111,7 +111,7 @@ export default function ProductDetail() {
       <div className="grid md:grid-cols-2 gap-10">
         {/* Gallery */}
         <div>
-          <div className="aspect-square rounded-3xl overflow-hidden">
+          <div className="aspect-square max-w-[540px] mx-auto rounded-3xl overflow-hidden">
             {gallery ? (
               <ProductImage
                 product={product}

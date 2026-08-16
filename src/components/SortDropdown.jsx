@@ -92,10 +92,6 @@ export default function SortDropdown({ value, onChange }) {
             shadow-xl
             p-1.5
             overflow-hidden
-            animate-in
-            fade-in
-            slide-in-from-top-2
-            duration-200
           "
         >
           {options.map((option) => {
