@@ -3,12 +3,6 @@ import { Heart, ShoppingCart, Star } from "lucide-react";
 import ProductImage from "./ProductImage";
 import { useShop } from "../context/ShopContext";
 
-const badgeToneMap = {
-  primary: "bg-primary-600",
-  accent: "bg-accent",
-  success: "bg-success",
-};
-
 function formatPrice(n) {
   return n.toLocaleString("fa-IR");
 }
@@ -33,11 +27,11 @@ export default function ProductCard({ product }) {
           />
         </Link>
 
-        {product.badge && (
+        {discount && (
           <span
-            className={`absolute top-6 right-6 text-[11px] font-bold text-white px-2.5 py-1 rounded-lg ${badgeToneMap[product.color]}`}
+            className="absolute top-6 right-6 text-[11px] font-bold text-white px-2.5 py-1 rounded-lg bg-accent"
           >
-            {product.badge}
+            تخفیف
           </span>
         )}
 

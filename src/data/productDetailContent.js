@@ -1,8 +1,3 @@
-// Lightweight mock data generator for the product detail page (specs + reviews).
-// Since this is a demo catalogue without a real backend, specs/reviews are
-// derived deterministically from each product so the same product always
-// shows the same content.
-
 const reviewerNames = [
   "علی محمدی",
   "سارا احمدی",
