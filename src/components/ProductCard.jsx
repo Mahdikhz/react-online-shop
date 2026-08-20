@@ -28,9 +28,7 @@ export default function ProductCard({ product }) {
         </Link>
 
         {discount && (
-          <span
-            className="absolute top-6 right-6 text-[11px] font-bold text-white px-2.5 py-1 rounded-lg bg-accent"
-          >
+          <span className="absolute top-6 right-6 text-[11px] font-bold text-white px-2.5 py-1 rounded-lg bg-accent">
             تخفیف
           </span>
         )}

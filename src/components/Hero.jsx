@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight, Smartphone } from "lucide-react";
+import { ChevronLeft, ChevronRight} from "lucide-react";
 import heroGif1 from "../assets/slide-1.gif";
 import heroGif2 from "../assets/slide-2.gif";
 import heroGif3 from "../assets/slide-3.gif";
@@ -9,17 +8,14 @@ const slides = [
   {
     id: 1,
     gif: heroGif1,
-    cta: "/products?category=mobile",
   },
   {
     id: 2,
     gif: heroGif2,
-    cta: "/products?category=laptop",
   },
   {
     id: 3,
     gif: heroGif3,
-    cta: "/products",
   },
 ];
 
@@ -29,7 +25,7 @@ export default function Hero() {
   useEffect(() => {
     const t = setInterval(() => setIndex((i) => (i + 1) % slides.length), 4600);
     return () => clearInterval(t);
-  }, []);
+  }, [index]);
 
   const go = (dir) =>
     setIndex((i) => (i + dir + slides.length) % slides.length);

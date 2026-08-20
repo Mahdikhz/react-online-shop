@@ -25,7 +25,7 @@ export default function Header() {
   const search = (e) => {
     e.preventDefault();
     const q = query.trim();
-    navigate(q ? `/products?q=${(q)}` : "/products");
+    navigate(q ? `/products?q=${encodeURIComponent(q)}` : "/products");
     setMobileOpen(false);
   };
   return (
@@ -108,6 +108,7 @@ export default function Header() {
           </Link>
         </div>
       </div>
+      {/* -------search in mobile---------- */}
       <form onSubmit={search} className="md:hidden px-4 pb-3">
         <div className="relative">
           <input
@@ -124,9 +125,6 @@ export default function Header() {
       <nav className="hidden md:block border-t border-ink-500/10 bg-white">
         <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-6 text-sm font-medium text-ink-700">
-            {/* <Link to="/products" className="text-primary-600 font-bold">
-              مگا لیست منو
-            </Link> */}
             {categories.slice(0, 6).map((c) => (
               <Link
                 key={c.id}

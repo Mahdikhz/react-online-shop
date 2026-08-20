@@ -7,13 +7,6 @@ const toneMap = {
   success: "bg-emerald-50 text-success",
 };
 
-/**
- * Renders a product's photo when `product.image` is set.
- * While the image is loading, an animated skeleton (pulse) is shown instead
- * of a blank box. If the image fails to load, or no `image` field exists yet,
- * it automatically falls back to the colored icon tile — so the UI never
- * shows an empty/broken box.
- */
 export default function ProductImage({
   product,
   iconClassName = "w-16 h-16",

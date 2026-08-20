@@ -1,7 +1,3 @@
-// Simple in-memory product catalogue for the demo store.
-// Each product uses an icon key (rendered via lucide-react) instead of a real
-// photo, styled as a colored tile — see ProductCard.jsx.
-
 export const categories = [
   { id: "mobile", label: "موبایل", icon: "Smartphone" },
   { id: "laptop", label: "لپ‌تاپ", icon: "Laptop" },
