@@ -107,13 +107,6 @@ export default function Wishlist() {
                   >
                     <ShoppingCart className="w-4 h-4" />
                   </button>
-                  {/* <button
-                    onClick={() => toggleWishlist(product.id)}
-                    aria-label="حذف از علاقه‌مندی‌ها"
-                    className="w-9 h-9 rounded-lg border border-ink-500/15 hover:border-red-300 hover:text-red-500 text-ink-500 flex items-center justify-center transition-colors"
-                  >
-                    <Trash2 className="w-4 h-4" />
-                  </button> */}
                 </div>
               </div>
             </div>

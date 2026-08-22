@@ -64,11 +64,6 @@ export default function ProductDetail() {
     .slice(0, 5);
   const specs = getSpecs(product);
   const reviews = getReviews(product);
-  const avgReviewRating = reviews.length
-    ? (reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(
-        1,
-      )
-    : product.rating;
 
   const handleAddToCart = () => {
     for (let i = 0; i < qty; i++) addToCart(product);

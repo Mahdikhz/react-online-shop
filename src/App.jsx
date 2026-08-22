@@ -14,10 +14,10 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <Routes>
-      {/* صفحه ورود بدون Layout */}
+      {/* Layoutصفحه ورود بدون  */}
       <Route path="/login" element={<Auth />} />
 
-      {/* بقیه صفحات با Layout */}
+      {/* Layoutبقیه صفحات با  */}
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
